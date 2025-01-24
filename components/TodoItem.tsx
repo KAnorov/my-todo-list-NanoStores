@@ -20,7 +20,7 @@ export default function TodoItem({ todo }:TodoItemProps)  {
     setNewText(e.target.value);
   };
 
-  return (
+  return <>
     <div className="todo-item">
       <input
         type="checkbox"
@@ -50,6 +50,6 @@ export default function TodoItem({ todo }:TodoItemProps)  {
         </>
       )}
     </div>
-  );
+    </>
 };
 

@@ -16,7 +16,7 @@ export default function TodoList() {
       }
     };
   
-    return (
+    return <>
       <div className="todo-list">
         <input
           type="text"
@@ -26,13 +26,13 @@ export default function TodoList() {
         />
         <button onClick={handleAddTodo}>Добавить</button>
         <button onClick={deleteSelectedTodos}>Удалить выбранные</button>
-        <div>
+       
           {todos.map(todo => (
             <TodoItem key={todo.id} todo={todo} />
           ))}
-        </div>
+        
       </div>
-    );
+      </>
 };
   
 

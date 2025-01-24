@@ -43,6 +43,10 @@ button {
  
 }
 
-.todo-button{
-  display: flex;
+.todo-list {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
 }
